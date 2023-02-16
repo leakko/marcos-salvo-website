@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Skeleton } from "./components/Skeleton";
 
 import tailwindStyles from "./styles/tailwind.css";
 
@@ -28,7 +29,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Skeleton />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
